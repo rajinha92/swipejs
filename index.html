@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Test swipeJS</title>
+</head>
+
+<body>
+  <div id="app" style="width: 400px; height: 400px; background: #e9e9e9;">
+
+  </div>
+  <script src="build/swipe.min.js"></script>
+  <script>
+    SwipeJSConfig.sensitivityY = 200;
+    var app = document.getElementById('app');
+    app.addEventListener('swipe.start', function() {
+      console.log('SWIPE_STARTED');
+    });
+    app.addEventListener('swipe.progress', function(event) {
+      console.log('SWIPE_IN_PROGRESS', event.detail);
+    });
+    app.addEventListener('swipe.cancel', function(event) {
+      console.log('SWIPE_CANCEL');
+    });
+    app.addEventListener('swipe.end', function(event) {
+      console.log('SWIPE_ENDED', event.detail);
+      switch (event.detail.direction) {
+        case SwipeJSConfig.NORTH:
+          alert('NORTH');
+          break;
+        case SwipeJSConfig.SOUTH:
+          alert('SOUTH');
+          break;
+        case SwipeJSConfig.EAST:
+          alert('EAST');
+          break;
+        case SwipeJSConfig.WEST:
+          alert('WEST');
+          break;
+        case SwipeJSConfig.NORTH_EAST:
+          alert('NORTH_EAST');
+          break;
+        case SwipeJSConfig.NORTH_WEST:
+          alert('NORTH_WEST');
+          break;
+        case SwipeJSConfig.SOUTH_EAST:
+          alert('SOUTH_EAST');
+          break;
+        case SwipeJSConfig.SOUTH_WEST:
+          alert('SOUTH_WEST');
+          break;
+      }
+    });
+  </script>
+</body>
+
+</html>
