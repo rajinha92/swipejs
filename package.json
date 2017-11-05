@@ -1,0 +1,30 @@
+{
+  "name": "pure-swipe-js",
+  "version": "1.0.0",
+  "description": "A JS pure swipe plugin",
+  "main": "bundle.js",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "gulp-concat": "^2.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajinha92/swipejs.git"
+  },
+  "author": "Rafael Conrado <rafael.conrado.farias@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajinha92/swipejs/issues"
+  },
+  "homepage": "https://github.com/rajinha92/swipejs#readme"
+}
